@@ -13,7 +13,8 @@ export default function CarForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        dispatch(addCar( { name, cost }))
+        dispatch(addCar( { name, cost }));
+       
     }
 
     const handleChangeName = (event) => {
@@ -52,7 +53,7 @@ export default function CarForm() {
                 type="text" 
                 placeholder='car name...'
                 value={name}
-                oncChange={handleChangeName}
+                onChange={handleChangeName}
                 />
         </div>
         
